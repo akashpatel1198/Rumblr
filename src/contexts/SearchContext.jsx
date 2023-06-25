@@ -13,11 +13,11 @@ export function SearchContextProvider({ children }) {
 
   const getData = (data) => {
 
-    fetch('http://localhost:3000/api/search/', {
+    fetch('api/search/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': 'http://localhost:3000/*',
+        'Access-Control-Allow-Origin': '*',
         'mode': 'cors'
       },
       body: JSON.stringify({

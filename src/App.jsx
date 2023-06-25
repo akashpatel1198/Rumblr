@@ -7,8 +7,6 @@ import Links from './components/Links';
 
 export default function App() {
     
-    // const navState = useNavContext().navState
-    
     return (
         <div>
         <NavContextProvider>

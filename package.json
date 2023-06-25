@@ -8,7 +8,8 @@
     "test": "jest --detectOpenHandles",
     "server": "nodemon server/server.js",
     "frontend": "webpack-dev-server --open --hot",
-    "build": "webpack"
+    "build": "webpack",
+    "dev": "npm run server && npm run frontend"
   },
   "repository": {
     "type": "git",

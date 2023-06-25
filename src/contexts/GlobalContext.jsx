@@ -10,9 +10,13 @@ export function GlobalContextProvider({ children }) {
   const [globalState, setGlobalState] = useState([])
   
   const fetchFrequency = (freq) => {
-    console.log("inside global fetch:", freq)
-    fetch(`http://localhost:3000/api/global/${freq}`, {
-      headers: { "Access-Control-Allow-Origin": "*", mode: "cors"}
+    // console.log("inside global fetch:", freq)
+
+    fetch(`api/global/${freq}`, {
+      headers: { 
+        "Access-Control-Allow-Origin": "*", 
+        mode: "cors"
+      }
     })
     .then(data => data.json())
     .then(data => {
